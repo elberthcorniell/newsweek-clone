@@ -133,3 +133,59 @@ nav > ul > li:last-child {
     color: #807f84;
 }
 
+footer {
+    padding: 20px;
+}
+
+footer > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding-bottom: 15px;
+    color: #807f84;
+}
+
+footer > div:first-child span {
+    font-size: 12px;
+    color: #807f84;
+    padding: 0 5px;
+}
+
+footer > div:first-child > div:first-child {
+    display: flex;
+    align-items: flex-end;
+}
+
+footer svg {
+    height: 40px;
+    width: 210px;
+    fill: #f72210;
+}
+
+footer i {
+    font-size: 24px;
+    padding: 0 5px;
+    color: #807f84;
+
+}
+
+footer > div:last-child {
+    padding: 10px 0;
+    color: #807f84;
+    font-weight: 300;
+}
+
+footer > div:last-child > ul > li {
+    display: inline;
+    padding: 0 5px;
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+footer > div:last-child > ul > li:first-child {
+    border: none;
+}
+
+footer > div:last-child > ul > li:last-child {
+    border: none;
+}
