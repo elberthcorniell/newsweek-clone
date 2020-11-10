@@ -16,7 +16,7 @@ body {
     font-size: 15px;
     line-height: 20px;
     margin: auto;
-    overflow-x: hidden
+    overflow-x: unset
 }
 
 ul {
@@ -40,7 +40,45 @@ img {
     background-color: white;
     padding: 0;
     max-width: 1310px;
-    overflow: hidden;
+    overflow: unset;
+}
+
+.hidden {
+    display: none;
+}
+
+#nav {
+    background-color: #f72210;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    height: fit-content;
+    transform: none;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    animation: mymove 0.2s ease-in-out;
+}
+
+@keyframes mymove {
+    from {
+        top: -100px;
+    }
+    to {
+        top: 0px;
+    }
+}
+
+
+#nav.hidden {
+    display: none;
+}
+
+#nav svg {
+    fill: white;
+    height: 60px;
 }
 
 .header {
@@ -67,7 +105,7 @@ img {
     height: 60px;
 }
 
-.header button {
+.header button, #nav button {
     text-transform: uppercase;
     background-color: transparent;
     border: none;
@@ -81,14 +119,19 @@ img {
     height: fit-content;
 }
 
-.header > div:last-child > button:first-child {
+.header > div:last-child > button:first-child, #nav > div > button:first-child {
     color: white;
 }
 
-.header > div:last-child > button:last-child {
+.header > div:last-child > button:last-child, #nav > div > button:nth-child(2)  {
     color: black;
     background-color: #ffe400;
     border-radius: 24px;
+    padding: 0 10px;
+}
+
+#nav > div > i:last-child {
+    margin: 0 10px;
 }
 
 nav {
@@ -274,8 +317,13 @@ article p {
 }
 
 .stick {
+    display: flex;
+}
+
+.stick > div {
+    height: fit-content;
     position: sticky;
-    top: 0;
+    bottom: 0;
 }
 
 .subscribe {

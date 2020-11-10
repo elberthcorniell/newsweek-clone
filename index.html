@@ -21,9 +21,9 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onscroll="handleScroll()">
     <nav id="nav" class="hidden">
-        <svg version="1.1" width="396" height="60" xmlns="http://www.w3.org/2000/svg"
+        <svg version="1.1" width="250" height="40" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 396 60"
             style="enable-background:new 0 0 395.6 60;" xml:space="preserve">
             <g>
@@ -89,8 +89,8 @@
             </div>
         </header>
         <main>
-            <div class="row">
-                <div class="col-lg-4 stick">
+            <div class="row stick">
+                <div class="col-lg-4">
                     <div class="featured-stories">
                         <h1>featured stories</h1>
                         <article>
@@ -227,7 +227,7 @@
                         </article>
                     </div>
                 </div>
-                <div class="col-lg-4 stick no-padding">
+                <div class="col-lg-4 no-padding">
                     <div class="top-story">
                         <h1>Top Story</h1>
                         <article>
@@ -841,7 +841,8 @@
                                         neque dolore aperiam velit.</p>
                                     <form action="#">
                                         <input type="email" placeholder="Email addresss">
-                                        <button type="submit">free sign up&nbsp;<i class="fas fa-chevron-right"></i></button>
+                                        <button type="submit">free sign up&nbsp;<i
+                                                class="fas fa-chevron-right"></i></button>
                                     </form>
                                 </div>
                             </div>
@@ -898,6 +899,17 @@
             </div>
         </footer>
     </div>
+    <script type="text/javascript">
+        let handleScroll = () => {
+            let navBar = document.getElementById('nav')
+            let scroll = window.scrollY
+            if (scroll > 300) {
+                navBar.className = ""
+            }else{
+                navBar.className = "hidden"
+            }
+        }
+    </script>
 </body>
 
 </html>
