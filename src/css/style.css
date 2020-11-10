@@ -152,6 +152,15 @@ nav > ul > li:last-child {
     padding: 10px 0;
 }
 
+.padding {
+    padding: 20px 20px;
+}
+
+.orange {
+    color: #f72210;
+    font-weight: bold;
+}
+
 article img {
     width: 100%;
 }
@@ -203,8 +212,13 @@ article p {
 }
 
 .list-articles > div > article, .list-articles > div {
-    padding: 15px 0;
+    padding: 5px 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.list-articles > div > article:first-child, .list-articles > div:first-child {
+    border: none;
+    padding-top: 0;
 }
 
 .list-articles img {
@@ -212,6 +226,10 @@ article p {
     height: 90px;
     width: 90px;
     margin-right: 15px;
+}
+
+.list-articles.writer > div {
+    padding: 15px 0;
 }
 
 .list-articles.writer img {
@@ -258,6 +276,68 @@ article p {
 .stick {
     position: sticky;
     top: 0;
+}
+
+.subscribe {
+    background-color: #f4f5f6;
+    padding: 30px;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.subscribe img {
+    height: 200px;
+    width: 140px;
+    margin-right: 40px;
+}
+
+.subscribe h1 {
+    font-size: 24px;
+    color: black;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.subscribe button, .newsletter button {
+    color: white;
+    background-color: #f72210;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.newsletter {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.newsletter button {
+    width: calc(100% - 15px);
+    margin: 10px 0;
+}
+
+.newsletter h1 {
+    color: black;
+    text-transform: capitalize;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: calc(100% - 15px);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.newsletter > div > div:first-child {
+    background: url("https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5") center center / cover no-repeat;
+}
+
+.newsletter > div > div:last-child {
+    padding: 20px;
 }
 
 footer {
