@@ -36,11 +36,8 @@ img {
     width: 100%;
 }
 
-.container {
+.container-fluid {
     background-color: white;
-    padding: 0;
-    max-width: 1310px;
-    overflow: unset;
 }
 
 .hidden {
@@ -317,13 +314,9 @@ article p {
 }
 
 .stick {
-    display: flex;
 }
 
 .stick > div {
-    height: fit-content;
-    position: sticky;
-    bottom: 0;
 }
 
 .subscribe {
