@@ -6,12 +6,15 @@
 body {
     font-family: 'Roboto';
     width: 100vw;
-    max-width: 1310px;
     background-color: #f4f5f6;
     font-size: 15px;
     line-height: 20px;
     margin: auto;
     overflow-x: hidden
+}
+
+ul {
+    padding: 0;
 }
 
 a {
@@ -21,6 +24,12 @@ a {
 a:hover {
     color: #f72210;
     text-decoration: none;
+}
+
+.container {
+    background-color: white;
+    padding: 0;
+    max-width: 1310px;
 }
 
 .header {
@@ -80,7 +89,6 @@ nav {
 nav > ul {
     display: flex;
     justify-content: space-between;
-    padding: 0;
 }
 
 nav > ul > li {
@@ -95,5 +103,33 @@ nav > ul > li {
 
 nav > ul > li:last-child {
     border-right: none;
+}
+
+.trending {
+    background-color: white;
+    margin-top: -36px;
+    border: 2px solid rgba(0, 0, 0, 0.05);
+    border-right: none;
+    border-left: none;
+    height: fit-content;
+}
+
+.trending > ul {
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+    margin: 0 auto 0 0;
+}
+
+.trending > ul > li {
+    display: inline;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 12px 20px;
+}
+
+.trending a {
+    color: #807f84;
 }
 
