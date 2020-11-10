@@ -3,6 +3,12 @@
     font-family: 'Roboto';
 }
 
+h1 {
+    font-size: 18px;
+    color: #807f84;
+    text-transform: uppercase;
+}
+
 body {
     font-family: 'Roboto';
     width: 100vw;
@@ -26,10 +32,15 @@ a:hover {
     text-decoration: none;
 }
 
+img {
+    width: 100%;
+}
+
 .container {
     background-color: white;
     padding: 0;
     max-width: 1310px;
+    overflow: hidden;
 }
 
 .header {
@@ -131,6 +142,122 @@ nav > ul > li:last-child {
 
 .trending a {
     color: #807f84;
+}
+
+.featured-stories {
+    padding: 10px 40px;
+}
+
+.top-story {
+    padding: 10px 0;
+}
+
+article img {
+    width: 100%;
+}
+
+article > div:first-child {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+article > div:first-child span {
+    background-color: rgba(255, 255, 255, 0.85);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f72210;
+}
+
+article h1 {
+    color: black;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+article p {
+    font-weight: 300;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.my-turn {
+    margin-bottom: 20px;
+}
+
+.my-turn h1 {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.my-turn img {
+    margin-bottom: 15px;
+}
+
+.list-articles > div > article, .list-articles > div {
+    padding: 15px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.list-articles img {
+    float: left;
+    height: 90px;
+    width: 90px;
+    margin-right: 15px;
+}
+
+.list-articles.writer img {
+    height: 60px;
+    width: 60px;
+}
+
+.list-articles h1 {
+    font-size: 16px;
+}
+
+.list-articles.writer h1 {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.list-articles.writer span {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #555;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    color: black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.title h1 {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.title img {
+    background-color: #f72210;
+    width: 28px;
+    margin-right: 10px;
+}
+
+.stick {
+    position: sticky;
+    top: 0;
 }
 
 footer {
